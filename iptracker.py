@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+'''
+Edited by: [𝐙𝐄𝐑𝟘.𝟙𝐍𝐍]
+'''
+
 from requests import get
 from time import sleep
 
@@ -7,46 +12,46 @@ def ipTrack(ip):
 
     while True:
         if 'message' in data:
-            print('\n\033[31m> Invalid/Nonexistant IP. \033[33m(Example: 123.456.789.000)\n\033[m')
+            print('\nIP inválido ou não existente. \nEx.: [ 123.456.789.000 ]\n')
             break
         else:
             print()
             print('='*28)
-            print(f'\033[34mIP to Track: \033[33m{data["query"]}\033[m')
+            print(f'IP to Track: {data["query"]}')
             print('='*28)
-            print(f'\033[34m> Continent: \033[33m{data["continent"]}\033[m')
-            print(f'\033[34m> Country: \033[33m{data["country"]}')
-            print(f'\033[34m> Country Code: \033[33m{data["countryCode"]}')
-            print(f'\033[34m> State: \033[33m{data["regionName"]}')
-            print(f'\033[34m> City: \033[33m{data["city"]}')
-            print(f'\033[34m> Latitude: \033[33m{data["lat"]}')
-            print(f'\033[34m> Longitude: \033[33m{data["lon"]}')
-            print(f'\033[34m> Timezone: \033[33m{data["timezone"]}')
-            print(f'\033[34m> Provider: \033[33m{data["isp"]}\n\033[m')
+            print(f'Continent: {data["continent"]}')
+            print(f'Country: {data["country"]}')
+            print(f'Country Code: {data["countryCode"]}')
+            print(f'State: {data["regionName"]}')
+            print(f'City: {data["city"]}')
+            print(f'Latitude: {data["lat"]}')
+            print(f'Longitude: {data["lon"]}')
+            print(f'Timezone: {data["timezone"]}')
+            print(f'Provider: {data["isp"]}\n')
             sleep(2)
             break
 
-print('\n\033[34mCoded by f4ll_py\033[m')
-print('\n\033[34mVersion: \033[33m0.1\033[m')
-print('''\033[31m
+print('\nCoded by f4ll_py')
+print('\nVersion: 0.1')
+print('''
 ██╗██████╗ ████████╗██████╗  █████╗  ██████╗██╗  ██╗███████╗██████╗ 
 ██║██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
 ██║██████╔╝   ██║   ██████╔╝███████║██║     █████╔╝ █████╗  ██████╔╝
 ██║██╔═══╝    ██║   ██╔══██╗██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗
 ██║██║        ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
-╚═╝╚═╝        ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝  
-\033[m''')
+╚═╝╚═╝        ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ 
+''')
 
 while True:
     try:
-        ip = str(input('\033[32mEnter the IP (w/ dots | 0 to quit): \033[m'))
+        ip = str(input('\nEnter the IP (w/ dots | 0 to quit): '))
         if ip == '0':
-            print('\n\033[34mCoded by f4ll_py\n\033[m')
+            print('\nCoded by f4ll_py\n')
             sleep(0.5)
             break
         else:
             ipTrack(ip)
     except(KeyboardInterrupt):
-        print('\n\n\033[34mCoded by f4ll_py\n\033[m')
+        print('\n\nCoded by f4ll_py\n')
         sleep(0.5)
         break
