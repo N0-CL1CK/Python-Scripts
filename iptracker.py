@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+'''
+Edited by: [𝐙𝐄𝐑𝟘.𝟙𝐍𝐍]
+'''
+
 from requests import get
 from time import sleep
 
