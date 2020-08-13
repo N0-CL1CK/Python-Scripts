@@ -13,7 +13,7 @@ def main():
     paths=[
         'C:\\Windows\\Prefetch',
         'C:\\Windows\\Temp',
-        'C:\\Users\\Luis\\AppData\\Local\\Temp'
+        'C:\\Users\\%USER%\\AppData\\Local\\Temp'
     ]
 
     command('color a')
