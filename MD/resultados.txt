@@ -1,0 +1,17 @@
+Quick Sort Results:
+
+20000 elementos ordenados em 0 segundos e 36874 microssegundos
+40000 elementos ordenados em 0 segundos e 79786 microssegundos
+60000 elementos ordenados em 0 segundos e 125692 microssegundos
+80000 elementos ordenados em 0 segundos e 179053 microssegundos
+100000 elementos ordenados em 0 segundos e 230870 microssegundos
+
+
+
+Comb Sort Results:
+
+20000 elementos ordenados em 0 segundos e 63851 microssegundos
+40000 elementos ordenados em 0 segundos e 148594 microssegundos
+60000 elementos ordenados em 0 segundos e 219913 microssegundos
+80000 elementos ordenados em 0 segundos e 333800 microssegundos
+100000 elementos ordenados em 0 segundos e 419412 microssegundos
